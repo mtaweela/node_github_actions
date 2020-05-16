@@ -5,6 +5,8 @@ var cookieParser = require('cookie-parser');
 var lessMiddleware = require('less-middleware');
 var logger = require('morgan');
 
+require("./db/mongo");
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
